@@ -1,5 +1,12 @@
 server:
   port: 8761
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      username: luciocarlos
+      password: luciocarlos2002
 eureka:
   client:
     register-with-eureka: false
@@ -8,5 +15,5 @@ eureka:
     hostname: ${COMPUTERNAME:localhost}
 logging:
   level:
-    '[com.netflix.eureka]': 'OFF'
-    '[com.netflix.discovery]': 'OFF'
+    "[com.netflix.eureka]": "OFF"
+    "[com.netflix.discovery]": "OFF"
